@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <title>Document</title>
     <style>
       #particles-js {
@@ -13,23 +17,105 @@
         height: 100%;
         width: 100%;
         top: 0;
+        pointer-events: auto;
       }
     </style>
   </head>
   <body>
-    <header>
-      <img src="./assets/sinFondo.png" />
+    <header class="flex justify-center items-center md:my-4">
+      <img src="./assets/sinFondo.png" class="h-32 lg:h-48" />
     </header>
-    <main class="flex flex-col px-5">
-      <a href="https://forms.gle/uVcLxrpy1yyb3cZE8" target="_blank" class="text-center py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Ayudanos a mejorar</a>
+    <main class="flex flex-col">
+      <blockquote
+        class="lg:text-3xl italic text-center font-semibold text-white py-8 text-shadow-lg/99"
+      >
+        <p>
+          "Nuestro deseo es que te lleves la mejor experiencia posible y
+          conozcas cada sabor de nuestro catalogo. Somos felices de sentir que
+          formamos parte de tus momentos"
+        </p>
+      </blockquote>
+      <div class="my-10">
+        <a
+          href="https://forms.gle/uVcLxrpy1yyb3cZE8"
+          target="_blank"
+          class="flex justify-center items-center py-2 px-5 me-2 mb-2 text-sm lg:text-base font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+        >
+          <i class="fa-brands fa-google" style="margin: 0 10px"></i>
+          Ayudanos a mejorar
+        </a>
+        <a
+          href="https://api.whatsapp.com/send?phone=542644854841&text=Hola%20Nimue%20Pasteleria!%20Quiero%20realizar%20una%20consulta"
+          target="_blank"
+          class="flex justify-center items-center py-2 px-5 me-2 mb-2 text-black text-sm text-center lg:text-base font-medium bg-green-500 hover:bg-green-600 rounded-lg transition-colors duration-300"
+        >
+          <i
+            class="fa-brands fa-whatsapp"
+            style="margin: 0 10px; color: black"
+          ></i
+          >Conversa con nosotros
+        </a>
+      </div>
+      <div class="mt-24 mb-12 flex flex-col">
+        <section
+          class="overflow-hidden bg-stone-50/80 rounded flex justify-center items-center my-2"
+        >
+          <div class="lg:px-16 lg:py-18 w-1/2">
+            <div
+              class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right"
+            >
+              <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+                Nuestra Ubicación
+              </h2>
+
+              <p class="hidden text-gray-500 md:mt-4 md:block">
+                Recuerda que puedes visitarnos en nuestro local para charlar
+                directamente con nosotros, asesorarte en tus compras y conocer
+                nuestro catálogo de productos. ¡Te esperamos!
+              </p>
+            </div>
+          </div>
+
+          <iframe
+            class="border-0 h-32 w-1/2 p-2 object-cover sm:h-64 rounded-xl"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3748.6443626041014!2d-68.56213708833342!3d-31.578857804017627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96813f88694a3e03%3A0x90adf7a92862fe91!2sFounier%20Sur%20558%2C%20J5425%20Villa%20Krause%2C%20San%20Juan!5e1!3m2!1ses!2sar!4v1762122563740!5m2!1ses!2sar"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+        <section
+          class="overflow-hidden bg-stone-50/80 rounded flex justify-center items-center my-2"
+        >
+        <img
+          class="border-0 h-32 w-1/2 p-2 object-cover sm:h-64 rounded-xl"
+          src="./assets/budin.jpg"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></img>
+          <div class="lg:px-16 lg:py-18 w-1/2">
+            <div
+              class="mx-auto max-w-xl text-center ltr:sm:text-right rtl:sm:text-right"
+            >
+              <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+                Nuestra Historia
+              </h2>
+
+              <p class="hidden text-gray-500 md:mt-4 md:block">
+                Comenzo como un entretenimiento, una pasion por la reposteria que
+                se fue transformando en un proyecto de vida. Nacio la idea de
+                compartir con los demas lo que nos gusta hacer, y asi fue como dimos vida a Nimue Pasteleria.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
-    <footer>
-      
-    </footer>
-    <div id="particles-js">
-    </div>
-    
-    <script src="./particles.min.js" ></script>
+    <footer></footer>
+    <div id="particles-js"></div>
+
+    <script src="./particles.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
